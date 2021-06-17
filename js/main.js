@@ -48,18 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
     };
 
-    // const checkEmail = (event) => {
-        
-    //     if (emailInput.value !== '') {
-    //         button.disabled = false;
-    //     } else {
-    //         button.disabled = true;
-    //         return;
-    //     }
-
-    //     event.preventDefault();
-    // };
-
     // type text function
     function typeText () {
         let design = header.textContent;
