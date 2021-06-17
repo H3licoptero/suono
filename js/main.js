@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
 
             if (nameInput.value !== '') {
-                // nameInput.value = nameInput.value.replace(/[^a-zA-Zа-яА-Я]+$/g, '');
                 button.disabled = false;
             } else {
                 button.disabled = true;
@@ -161,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
     formSend();
     
     // ------------ eventListeners 
-    // emailInput.addEventListener("input", checkEmail);
     nameInput.addEventListener("input", checkName);
     inputWrap.addEventListener("input", checkValueOfInput);
 });
