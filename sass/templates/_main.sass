@@ -1,0 +1,79 @@
+.main
+    background-image: url("../img/line-distorted.svg"), url("../img/line-distorted.svg"), url("../img/line-distorted.svg")  
+    background-repeat: no-repeat
+    background-size: auto
+    background-position: 400px 662px, 863px 345px, right 453px top 922px
+    animation: bg-move 7s linear infinite
+.text
+    position: relative
+    &__wrapper
+        padding-top: 358px
+        padding-bottom: 230px 
+        font-family: $righteous
+        font-size: 100px
+        line-height: 110%
+        max-width: 1682px
+        margin: auto
+    &__ellipse-horizontal--secondary
+        height: 398px
+        top: 260px
+        left: -140px
+        animation: horizontal-ellipse-small 10s ease-in-out infinite
+    &__ellipse-horizontal--primary
+        bottom: 0
+        right: 25px
+        animation: horizontal-ellipse-primary 10s ease-in-out infinite
+.ellipse
+    &__horizontal-secondary
+        background-image: url("../img/ellipse-horizontal-small.svg")
+        background-repeat: no-repeat
+        max-width: 681px
+        width: 100%
+    &__horizontal-primary
+        background-image: url("../img/ellipse-horizontal.svg")
+        background-repeat: no-repeat
+        width: 847px
+        height: 555px
+    &__vertical
+        background-image: url("../img/ellipse-vertical.svg")
+        background-repeat: no-repeat
+        width: 400px
+        height: 631px
+.response
+    position: fixed
+    bottom: 0
+    left: 0
+    width: 100%
+    background-color: #EFEDFD
+    z-index: 1
+    overflow: hidden 
+    transform: translateY(200px)
+    transition: transform 0.3s ease-in
+    &--active
+        transform: translateY(0)
+        transition: transform 0.3s ease-in
+    &__container p
+        font-family: $righteous
+        font-size: 40px
+        text-align: center
+        margin-bottom: 0
+        padding: 54px 0 
+    &__circle-middle
+        max-width: 145px
+        width: 100%
+        max-height: 145px
+        right: 10%
+        animation: response-middle 20s ease-in-out infinite
+    &__circle-small
+        max-width: 68px
+        width: 100%
+        max-height: 68px
+        bottom: 10px
+        left: 10%
+        animation: response-small 10s ease-in-out infinite
+    &__line-distorted
+        top: 34px
+        left: 200px
+        animation: line-response 15s ease-in-out infinite
+
+        

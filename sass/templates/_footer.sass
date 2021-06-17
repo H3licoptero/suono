@@ -1,0 +1,43 @@
+.footer
+    border-top: 1px solid $primary
+    font-family: $raleway
+    &__container
+        padding-top: 40px 
+        padding-bottom: 40px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__items, &__logo
+        margin-bottom: 0
+    &__items span
+        font-size: 12px
+    &__logo
+        font-size: 14px
+        text-transform: uppercase
+        font-family: $righteous
+        letter-spacing: 2px
+    &__socials
+        display: flex
+        align-items: center
+        justify-content: center
+    &__socials
+        line-height: 100%
+    &__social-item
+        display: flex
+        width: 24px
+        height: 24px
+        margin-right: 20px
+        opacity: 0.5
+        transition: all 0.3s ease-in
+    &__social-item > img
+        object-fit: contain
+        object-position: bottom
+    &__social-item:first-child
+        height: 24px
+    &__social-item:last-child
+        margin-right: 0
+    &__social-item:hover
+        transform: translateY(-3px)
+        opacity: 1
+        transition: all 0.3s ease-in
+    

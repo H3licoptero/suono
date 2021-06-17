@@ -1,0 +1,107 @@
+.contacts
+    position: relative
+    &__container
+        padding-top: 70px
+        padding-bottom: 495px
+    &__container p
+        font-family: $righteous
+        font-size: 100px
+        line-height: 120%
+        max-width: 1500px
+        width: 100%
+        margin: auto
+    &__container h2
+        font-family: $raleway
+        font-size: 18px
+        margin-bottom: 60px
+    &__form
+        padding-top: 135px
+        margin: auto
+        max-width: 1417px
+        width: 100%
+        bottom: 0
+    &__circle-middle
+        bottom: 0
+        left: -150px
+        animation: contacts-middle 5s ease-in-out infinite
+        z-index: -1
+    &__circle-small
+        top: 190px
+        right: 280px
+        animation: contacts-small 9s ease-in-out infinite
+        z-index: -1
+    &__ellipse-block
+        position: absolute
+        left: 43%
+        bottom: 8%
+        width: 280px
+        height: 200px
+    &__ellipse-small
+        background-image: url("../img/ellipse-horizontal-xs.svg")
+        background-repeat: no-repeat
+        width: 230px
+        height: 150px 
+        z-index: -1
+        &--first
+            right: 3px
+            top: 0
+            animation: tripple-ellipse 5s 1s ease-in-out infinite
+        &--second
+            top: 20px
+            right: 23px
+            animation: tripple-ellipse 5s 0.5s ease-in-out infinite
+        &--third
+            top: 43px
+            right: 40px
+            animation: tripple-ellipse 5s ease-in-out infinite
+.form
+    display: flex
+    justify-content: space-between
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    max-width: 918px
+    width: 100%
+    margin: auto
+    &__input-wrapper
+        display: flex
+        max-width: 918px
+        width: 100%
+        justify-content: space-between
+        margin-bottom: 40px
+    &__input-wrapper label
+        font-family: $righteous    
+    &__textarea textarea
+        margin-bottom: 50px
+        max-width: 918px
+        width: 100%
+        border: 1px solid $primary
+        padding: 20px 40px
+    &__textarea label
+        margin-bottom: 20px
+        font-family: $righteous
+    &__name-block
+        margin-right: 40px
+    &__email, &__name
+        border: none
+        padding: 20px 40px
+        border-bottom: 1px solid $primary
+        font-family: $raleway
+        max-width: 975px
+        width: 100%
+    &__btn
+        font-family: $raleway
+        font-size: 14px
+        letter-spacing: 0.2em
+        text-transform: uppercase
+        padding: 20px 117px
+        border: 1px solid $primary
+        transition: all 0.3s ease-in
+        background-color: $bg
+        z-index: 1
+    &__btn:hover
+        background-color: $primary
+        color: $bg  
+        transition: all 0.3s ease-in
+
+    

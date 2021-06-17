@@ -1,0 +1,125 @@
+.works
+    position: relative
+    &__container h2
+        font-family: $raleway
+        font-size: 18px
+        margin-bottom: 60px
+    &__container
+        padding-top: 130px
+        padding-bottom: 420px
+    &__row-1
+        display: flex
+        justify-content: space-between
+    &__row-2
+        margin-bottom: 130px
+        display: flex
+        justify-content: space-between
+    &__block-1, &__block-2
+        position: relative
+        overflow: hidden
+        border-radius: 12px
+    &__name
+        content: ""
+        position: absolute
+        font-family: $righteous
+        bottom: 0
+        left: 0
+        padding-left: 75px
+        padding-top: 20px
+        height: 135px
+        width: 100%
+        font-size: 60px
+        color: $bg
+        background-color: #70CEA9 
+        margin-bottom: 0
+        transform: translateY(160px)
+        transition: transform 0.5s ease-in-out
+    &__block-1:hover &__name, &__block-2:hover &__name
+        transform: translateY(0)
+        transition: transform 0.5s ease-in-out
+    &__block-1
+        max-width: 1000px
+        width: 100%
+        height: 777px
+    &__block-2    
+        max-width: 554px
+        width: 100%
+        height: 781px
+        margin-top: 390px
+    &__block-1 img, &__block-2 img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: center
+    &__row-2 &__block-1
+        margin-top: 390px
+    &__row-2 &__block-2
+        margin-top: 0
+    &__block-1 a:before, &__block-2 a:before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($primary, 0.1)   
+    &__block-1
+        z-index: 1
+        cursor: pointer
+    &__circle-big
+        right: 0
+        top: 0
+        animation: works-big-circle 7s ease-in-out infinite 
+    &__circle-middle
+        top: 792px
+        left: 0
+        animation: works-middle-circle 7s ease-in-out infinite 
+    &__circle-small
+        bottom: 1700px
+        left: 320px 
+        animation: works-small-circle 7s ease-in-out infinite 
+    &__ellipse-block
+        position: absolute
+        width: 928px
+        height: 631px
+        top: 1118px
+        left: 30%
+    &-ellipse__horizontal-primary--first
+        top: 60px
+        left: 60px
+        animation: works-ellipse-first 4s ease-in-out infinite 
+    &-ellipse__horizontal-primary--second
+        top: 30px
+        left: 30px
+        animation: works-ellipse-first 4s ease-in-out 0.5s infinite 
+    &-ellipse__horizontal-primary--third
+        animation: works-ellipse-first 4s ease-in-out 1s infinite 
+    &-ellipse__horizontal-primary
+        display: none
+        bottom: 1301px
+        left: 319px
+        animation: works-ellipse-primary 8s ease-in-out infinite 
+    &__circle-middle--second
+        display: none
+        bottom: 1077px
+        right: -120px 
+        animation: works-middle-second 9s ease-in-out infinite 
+    &__circle-big--second
+        bottom: 266px
+        left: -210px
+        animation: circle 9s ease-in-out infinite 
+    &__ellipse-vertical
+        bottom: 30px
+        right: 547px
+        animation: ellipse-vertical 15s linear infinite
+    &__line-distorted
+        bottom: 335px
+        left: 607px
+        animation: line-move 10s linear infinite
+.line
+    position: absolute
+    &-distorted
+        background-image: url(../img/line-distorted.svg)
+        background-repeat: no-repeat
+        width: 80px
+        height: 6px
