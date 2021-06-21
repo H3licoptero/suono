@@ -771,8 +771,9 @@ a:hover {
   .works__block-1:hover .works__links-block .works__img-link:hover {
     transition: all 0.5s ease;
     background: #2E2D37; }
-  .works__img-link a img {
-    width: 94px;
+  .works__img-link > img {
+    max-width: 94px;
+    width: 100%;
     height: 94px; }
   .works .works__image-link-1 {
     object-fit: contain;
