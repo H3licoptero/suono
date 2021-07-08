@@ -1,6 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-
+window.addEventListener('DOMContentLoaded', (event) => {
     "use strict";
+    const preloader = document.querySelector(".preloader");
+
+    const preloaderMove = () => {
+        preloader.style.transform = `translateY(-120%)`;
+        preloader.style.opacity = `0`;
+        preloader.style.transition = `transition 1s ease-in-out opacity 1s ease-in`;
+    };
+
+    setTimeout(preloaderMove, 5000);
+
     // ----------------- variables 
     const header = document.querySelector(".hero__title");
     const nameInput = document.querySelector(".form__name");
